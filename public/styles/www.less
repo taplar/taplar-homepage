@@ -1,0 +1,36 @@
+body {
+	background-color: @color-light-blue;
+
+	#core-content {
+		.title {
+			color: lighten(@color-cream, 18%);
+			font-size: @base-font-size * 1.75;
+			padding-top: @base-font-size * 1.75;
+			text-align: center;
+		}
+
+		#welcome {
+			padding: 0 @base-font-size / 2;
+
+			.comment {
+				color: darken(@color-white, 18%);
+				font-size: @base-font-size * 1.75;
+				text-indent: @base-font-size * 1.75;
+			}
+
+			.site-link {
+				a {
+					color: @color-cream;
+					font-size: @base-font-size * 2;
+					margin-left: @base-font-size * 1.75;
+					text-decoration: inherit;
+				}
+			}
+		}
+	}
+
+	#core-header {
+		background-color: @color-cream;
+		color: lighten(@color-cream, 18%);
+	}
+}
